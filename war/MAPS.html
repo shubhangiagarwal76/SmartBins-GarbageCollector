@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps On Click</title>
+
+
+    <style>
+        body {
+            background-image: url('/resources/bg.jpg');
+        }
+        .Header{
+            text-align: center;
+            color: darkslategrey;
+            font-family: Arial;
+            font-size: 35px;
+            position: center;
+            /*right: -39px;*/
+        }
+        .Quotes{
+            font-style: italic;
+            text-align: center;
+            position: center;
+            padding-top: 0px;
+            /*top: 50px;
+            left: 506px;*/
+
+        }
+        .icon{
+            position: relative;
+
+            left: 377px;
+
+            height: 70px;
+
+            top: -180px;
+        }
+        .gwt-searchbutton {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            width: fit-content;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .gwt-searchbutton {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .gwt-searchbutton :after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .gwt-searchbutton:hover {
+            padding-right: 25px;
+        }
+
+        .gwt-searchbutton:hover:after {
+            opacity: 1;
+            right: 0;
+        }
+        .textbox{
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('/resources/user_access-512.png');
+            background-position: 1px 1px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        .textbox:focus{
+            width: 100%;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="Header">
+        <h1>SMART BINS</h1>
+    </div>
+
+    <div class="Quotes">
+    <h1>"The Change Starts With You"</h1>
+    </div>
+
+    <div class="icon">
+    <img src="..\resources\icon1.png">
+    </div>
+
+
+    <h2> ENTER YOUR REGISTERED ID TO SEE MAP</h2>
+
+    <form action="MAPS.jsp" method="post">
+        <input type="text" name="id" class="textbox"><br>
+        <input type="submit" value="Submit" class="gwt-searchbutton"> <br>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="DRIVER's Coding:GWT">
+    <output-path>$PROJECT_DIR$/out/artifacts/DRIVER_s_Coding_GWT</output-path>
+    <root id="root">
+      <element id="gwt-compiler-output" facet="DRIVER's Coding/gwt/GWT" />
+    </root>
+  </artifact>
+</component>
